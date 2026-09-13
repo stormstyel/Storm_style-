@@ -1,24 +1,308 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>STORM STYLE | متجر الأناقة الرجالية</title>
-<meta name="description" content="STORM STYLE - أزياء رجالية مختارة بعناية">
+
+<meta name="description" content="STORM STYLE - متجر الأناقة الرجالية">
+
 <style>
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#050505;color:#f4f4f4;font-family:Arial,Tahoma,sans-serif}.wrap{max-width:1150px;margin:auto;padding:0 18px}.top{background:#0b0b0b;border-bottom:1px solid #262626;text-align:center;padding:9px;font-size:13px;color:#c8c8c8}.nav{position:sticky;top:0;z-index:10;background:rgba(5,5,5,.94);backdrop-filter:blur(12px);border-bottom:1px solid #222}.navin{height:70px;display:flex;align-items:center;justify-content:space-between;gap:18px}.logo{font-weight:900;letter-spacing:3px;font-size:24px;background:linear-gradient(90deg,#fff,#8d8d8d);-webkit-background-clip:text;color:transparent}.links{display:flex;gap:22px}.links a{color:#ddd;text-decoration:none;font-size:14px}.hero{min-height:600px;display:flex;align-items:center;background:radial-gradient(circle at 75% 35%,#353535 0,#151515 20%,#070707 55%,#050505 100%);position:relative;overflow:hidden}.hero:after{content:'STORM';position:absolute;left:-40px;bottom:-100px;font-size:210px;font-weight:900;color:rgba(255,255,255,.025);letter-spacing:8px}.heroText{max-width:620px;position:relative;z-index:1}.eyebrow{color:#aaa;letter-spacing:4px;font-size:12px}.hero h1{font-size:clamp(44px,9vw,88px);line-height:.95;margin:18px 0;background:linear-gradient(180deg,#fff,#777);-webkit-background-clip:text;color:transparent}.hero p{color:#bbb;font-size:18px;line-height:1.8;max-width:540px}.btn{display:inline-block;padding:14px 25px;border:1px solid #777;background:#eee;color:#090909;text-decoration:none;font-weight:800;margin-top:14px}.section{padding:75px 0}.title{text-align:center;margin-bottom:35px}.title h2{font-size:34px;margin:0 0 10px}.title p{color:#888}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.card{background:#0e0e0e;border:1px solid #252525;overflow:hidden;transition:.25s}.card:hover{transform:translateY(-4px);border-color:#777}.pic{height:260px;background:linear-gradient(145deg,#262626,#090909);display:flex;align-items:center;justify-content:center;color:#777;font-size:13px;position:relative}.tag{position:absolute;top:12px;right:12px;background:#eee;color:#111;padding:5px 9px;font-size:11px;font-weight:bold}.info{padding:16px}.info h3{margin:0 0 9px;font-size:16px}.price{font-weight:bold;color:#fff}.old{text-decoration:line-through;color:#666;font-weight:normal;margin-right:8px}.order{display:block;text-align:center;margin-top:13px;padding:10px;border:1px solid #444;color:#fff;text-decoration:none;font-size:13px}.features{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.feature{padding:28px;background:#0d0d0d;border:1px solid #242424;text-align:center}.feature b{display:block;margin-bottom:10px}.feature span{color:#888;font-size:13px;line-height:1.7}.about{background:#0a0a0a;border-top:1px solid #222;border-bottom:1px solid #222}.contact{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}.contact a{color:#fff;border:1px solid #444;padding:12px 18px;text-decoration:none}.foot{text-align:center;padding:28px;color:#666;border-top:1px solid #222;font-size:12px}@media(max-width:800px){.links{display:none}.grid{grid-template-columns:repeat(2,1fr)}.features{grid-template-columns:1fr}.hero{min-height:540px}.pic{height:220px}}@media(max-width:430px){.grid{grid-template-columns:1fr 1fr}.pic{height:190px}.hero p{font-size:15px}.section{padding:55px 0}}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f7f7;
+  color: #222;
+  line-height: 1.8;
+}
+
+.top {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+}
+
+nav {
+  background: white;
+  padding: 16px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 2px 10px rgba(0,0,0,.08);
+}
+
+.nav-inner {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.links a {
+  color: #222;
+  text-decoration: none;
+  margin: 0 8px;
+  font-weight: bold;
+}
+
+.hero {
+  background: linear-gradient(135deg,#111,#333);
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 19px;
+  margin-bottom: 25px;
+}
+
+.btn {
+  display: inline-block;
+  background: #25D366;
+  color: white;
+  text-decoration: none;
+  padding: 13px 25px;
+  border-radius: 30px;
+  font-weight: bold;
+  margin: 5px;
+}
+
+.btn.dark {
+  background: white;
+  color: #111;
+}
+
+.section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 60px 20px;
+}
+
+.section h2 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 35px;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,.08);
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.pic {
+  height: 190px;
+  background: linear-gradient(135deg,#222,#555);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 45px;
+}
+
+.card h3 {
+  margin: 18px 10px 5px;
+}
+
+.card p {
+  color: #777;
+  padding: 0 15px;
+}
+
+.price {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.about {
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  text-align: center;
+}
+
+.contact {
+  text-align: center;
+}
+
+.contact-box {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+}
+
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 25px 15px;
+  margin-top: 30px;
+}
+
+@media (max-width:600px) {
+  .nav-inner {
+    flex-direction: column;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .links a {
+    font-size: 14px;
+  }
+}
 </style>
 </head>
+
 <body>
-<div class="top">شحن قريبًا إلى جميع المحافظات — STORM STYLE</div>
-<nav class="nav"><div class="wrap navin"><div class="logo">STORM STYLE</div><div class="links"><a href="#home">الرئيسية</a><a href="#shop">المنتجات</a><a href="#about">من نحن</a><a href="#contact">تواصل معنا</a></div></div></nav>
-<section id="home" class="hero"><div class="wrap"><div class="heroText"><div class="eyebrow">MEN'S FASHION • 2026</div><h1>أسلوبك.<br>قوتك.</h1><p>اختيارات رجالية عصرية بتصميم فاخر. STORM STYLE — متجر إلكتروني صُمم ليكون مختلفًا.</p><a class="btn" href="#shop">اكتشف المجموعة</a></div></div></section>
-<section id="shop" class="section"><div class="wrap"><div class="title"><h2>مختارات STORM</h2><p>المنتجات التي نبدأ بها المتجر</p></div><div class="grid">
-<div class="card"><div class="pic"><span class="tag">TREND</span>صورة المنتج</div><div class="info"><h3>قميص رجالي ستايل فاخر</h3><div class="price">699 ج.م</div><a class="order" href="#contact">اطلب الآن</a></div></div>
-<div class="card"><div class="pic"><span class="tag">NEW</span>صورة المنتج</div><div class="info"><h3>تيشيرت Oversize Premium</h3><div class="price">599 ج.م</div><a class="order" href="#contact">اطلب الآن</a></div></div>
-<div class="card"><div class="pic"><span class="tag">HOT</span>صورة المنتج</div><div class="info"><h3>بنطال رجالي Modern Fit</h3><div class="price">799 ج.م</div><a class="order" href="#contact">اطلب الآن</a></div></div>
-<div class="card"><div class="pic"><span class="tag">LIMITED</span>صورة المنتج</div><div class="info"><h3>جاكيت رجالي Urban</h3><div class="price">1,199 ج.م</div><a class="order" href="#contact">اطلب الآن</a></div></div>
-</div></div></section>
-<section class="section about" id="about"><div class="wrap"><div class="title"><h2>لماذا STORM STYLE؟</h2><p>بداية بسيطة، علامة تجارية نكبرها خطوة بخطوة.</p></div><div class="features"><div class="feature"><b>اختيار ذكي</b><span>نركز على القطع العصرية القابلة للبيع بدل حشو المتجر بمنتجات كثيرة.</span></div><div class="feature"><b>ستايل فاخر</b><span>هوية سوداء وفضية تعطي المتجر مظهرًا احترافيًا ومميزًا.</span></div><div class="feature"><b>طلب مباشر</b><span>المرحلة التالية نربط الطلبات بوسيلة التواصل والدفع المناسبة لك.</span></div></div></div></section>
-<section class="section" id="contact"><div class="wrap"><div class="title"><h2>تواصل معنا</h2><p>للطلب والاستفسار</p></div><div class="contact"><a href="mailto:stormstyle.store@gmail.com">البريد الإلكتروني</a><a href="https://wa.me/201000000000" target="_blank">واتساب</a></div></div></section>
-<footer class="foot">© 2026 STORM STYLE — جميع الحقوق محفوظة</footer>
-</body></html>
+
+<div class="top">
+شحن قريبًا إلى جميع المحافظات 🚚
+</div>
+
+<nav>
+  <div class="nav-inner">
+    <div class="logo">STORM STYLE</div>
+
+    <div class="links">
+      <a href="#home">الرئيسية</a>
+      <a href="#shop">المتجر</a>
+      <a href="#about">من نحن</a>
+      <a href="#contact">تواصل معنا</a>
+    </div>
+  </div>
+</nav>
+
+<section id="home" class="hero">
+  <h1>STORM STYLE</h1>
+  <p>أناقة رجالية بأسلوب مختلف</p>
+
+  <a class="btn" href="https://wa.me/201213985655">
+    اطلب عبر واتساب
+  </a>
+
+  <a class="btn dark" href="#shop">
+    تصفح المنتجات
+  </a>
+</section>
+
+<section id="shop" class="section">
+  <h2>منتجاتنا</h2>
+
+  <div class="products">
+
+    <div class="card">
+      <div class="pic">👕</div>
+      <h3>تيشيرت رجالي</h3>
+      <p>تصميم أنيق ومريح للاستخدام اليومي</p>
+      <div class="price">السعر عند الطلب</div>
+      <a class="btn" href="https://wa.me/201213985655?text=مرحباً%20أريد%20طلب%20تيشيرت">
+        اطلب الآن
+      </a>
+    </div>
+
+    <div class="card">
+      <div class="pic">👔</div>
+      <h3>قميص رجالي</h3>
+      <p>أناقة مناسبة للمناسبات والخروجات</p>
+      <div class="price">السعر عند الطلب</div>
+      <a class="btn" href="https://wa.me/201213985655?text=مرحباً%20أريد%20طلب%20قميص">
+        اطلب الآن
+      </a>
+    </div>
+
+    <div class="card">
+      <div class="pic">🧥</div>
+      <h3>جاكيت رجالي</h3>
+      <p>ستايل عصري ومظهر مميز</p>
+      <div class="price">السعر عند الطلب</div>
+      <a class="btn" href="https://wa.me/201213985655?text=مرحباً%20أريد%20طلب%20جاكيت">
+        اطلب الآن
+      </a>
+    </div>
+
+    <div class="card">
+      <div class="pic">👖</div>
+      <h3>بنطلون رجالي</h3>
+      <p>راحة وأناقة في تصميم واحد</p>
+      <div class="price">السعر عند الطلب</div>
+      <a class="btn" href="https://wa.me/201213985655?text=مرحباً%20أريد%20طلب%20بنطلون">
+        اطلب الآن
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<section id="about" class="section">
+  <h2>من نحن</h2>
+
+  <div class="about">
+    <p>
+      أهلاً بك في STORM STYLE، متجر متخصص في الأناقة الرجالية.
+      نسعى لتقديم منتجات مميزة بتصاميم عصرية وجودة مناسبة.
+    </p>
+  </div>
+</section>
+
+<section id="contact" class="section contact">
+  <h2>تواصل معنا</h2>
+
+  <div class="contact-box">
+    <p>للطلب والاستفسار تواصل معنا مباشرة عبر واتساب.</p>
+
+    <br>
+
+    <a class="btn" href="https://wa.me/201213985655">
+      💬 تواصل عبر واتساب
+    </a>
+
+    <p style="margin-top:15px;">
+      01213985655
+    </p>
+  </div>
+</section>
+
+<footer>
+  © 2026 STORM STYLE - جميع الحقوق محفوظة
+</footer>
+
+</body>
+</html>
